@@ -29,11 +29,11 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         transition={{ duration: 0.3 }}
       >
         <h3 className="text-white text-lg font-bold">{project.title}</h3>
-        <p className="text-netflix-light-gray text-sm">{project.description}</p>
+        <p className="text-gray-300 text-sm">{project.description}</p>
         
         <div className="flex gap-2 mt-2 flex-wrap">
           {project.tags.map((tag, index) => (
-            <span key={index} className="text-xs bg-netflix-dark-gray px-2 py-1 rounded">
+            <span key={index} className="text-xs bg-gray-800 px-2 py-1 rounded">
               {tag}
             </span>
           ))}

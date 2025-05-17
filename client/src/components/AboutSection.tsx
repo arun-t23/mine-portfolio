@@ -17,8 +17,8 @@ const AboutSection = () => {
           alt="Developer Workspace Background" 
           className="w-full h-full object-cover opacity-40"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-netflix-black to-transparent"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-netflix-black to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
       </div>
       
       <div className="container relative z-10 mx-auto px-4">
@@ -50,13 +50,13 @@ const AboutSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              <span className="text-netflix-red text-sm font-bold">NETFLIX ORIGINAL</span>
+              <span className="text-red-600 text-sm font-bold">NETFLIX ORIGINAL</span>
               <span className="h-5 w-px bg-gray-500"></span>
-              <span className="text-netflix-light-gray text-sm font-bold">BIOGRAPHY</span>
+              <span className="text-gray-300 text-sm font-bold">BIOGRAPHY</span>
             </motion.div>
             
             <motion.h2 
-              className="text-4xl md:text-5xl font-netflix font-bold text-white mb-6"
+              className="text-4xl md:text-5xl font-bold text-white mb-6"
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
