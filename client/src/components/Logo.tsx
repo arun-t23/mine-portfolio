@@ -17,7 +17,7 @@ export function Logo({ size = 'medium', className = '', animate = false }: LogoP
   if (animate) {
     return (
       <motion.h1 
-        className={`netflix-logo ${sizeClasses[size]} ${className}`}
+        className={`text-red-600 font-bold ${sizeClasses[size]} ${className}`}
         initial={{ scale: 0.1, opacity: 0 }}
         animate={{ scale: [0.1, 1.2, 1], opacity: [0, 1, 1] }}
         transition={{ duration: 4, times: [0, 0.5, 1], ease: "easeOut" }}
@@ -27,7 +27,7 @@ export function Logo({ size = 'medium', className = '', animate = false }: LogoP
     );
   }
 
-  return <h1 className={`netflix-logo ${sizeClasses[size]} ${className}`}>{DEVELOPER_NAME}</h1>;
+  return <h1 className={`text-red-600 font-bold ${sizeClasses[size]} ${className}`}>{DEVELOPER_NAME}</h1>;
 }
 
 export default Logo;

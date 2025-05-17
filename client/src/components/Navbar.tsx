@@ -82,13 +82,13 @@ const Navbar = ({ activeProfile, onSwitchProfile }: NavbarProps) => {
       
       {/* Mobile menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-netflix-black py-2">
+        <div className="md:hidden bg-black py-2">
           <div className="container mx-auto px-4 flex flex-col space-y-3">
-            <a href="#home" className="text-sm font-semibold text-netflix-light-gray hover:text-white py-2">Home</a>
-            <a href="#projects" className="text-sm font-semibold text-netflix-light-gray hover:text-white py-2">Projects</a>
-            <a href="#skills" className="text-sm font-semibold text-netflix-light-gray hover:text-white py-2">Skills</a>
-            <a href="#about" className="text-sm font-semibold text-netflix-light-gray hover:text-white py-2">About</a>
-            <a href="#contact" className="text-sm font-semibold text-netflix-light-gray hover:text-white py-2">Contact</a>
+            <a href="#home" className="text-sm font-semibold text-gray-200 hover:text-white py-2">Home</a>
+            <a href="#projects" className="text-sm font-semibold text-gray-200 hover:text-white py-2">Projects</a>
+            <a href="#skills" className="text-sm font-semibold text-gray-200 hover:text-white py-2">Skills</a>
+            <a href="#about" className="text-sm font-semibold text-gray-200 hover:text-white py-2">About</a>
+            <a href="#contact" className="text-sm font-semibold text-gray-200 hover:text-white py-2">Contact</a>
           </div>
         </div>
       )}

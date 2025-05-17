@@ -41,10 +41,10 @@ const ContactSection = () => {
   };
   
   return (
-    <section id="contact" className="py-16 bg-netflix-black">
+    <section id="contact" className="py-16 bg-black">
       <div className="container mx-auto px-4">
         <motion.h2 
-          className="text-2xl font-netflix font-bold text-netflix-light-gray mb-8"
+          className="text-2xl font-bold text-gray-200 mb-8"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}

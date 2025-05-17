@@ -17,10 +17,10 @@ const SkillsSection = () => {
   };
 
   return (
-    <section id="skills" className="py-16 bg-netflix-black">
+    <section id="skills" className="py-16 bg-black">
       <div className="container mx-auto px-4">
         <motion.h2 
-          className="text-2xl font-netflix font-bold text-netflix-light-gray mb-8"
+          className="text-2xl font-bold text-gray-200 mb-8"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -31,18 +31,18 @@ const SkillsSection = () => {
         {/* Frontend Skills Row */}
         <div className="mb-12">
           <div className="flex items-center justify-between mb-4">
-            <h3 className="text-xl text-netflix-light-gray">Frontend Development</h3>
+            <h3 className="text-xl text-gray-200">Frontend Development</h3>
             
             <div className="flex gap-2">
               <button 
                 onClick={() => handleScroll('left', frontendRowRef)}
-                className="bg-netflix-dark-gray hover:bg-gray-700 rounded-full w-8 h-8 flex items-center justify-center text-white"
+                className="bg-gray-800 hover:bg-gray-700 rounded-full w-8 h-8 flex items-center justify-center text-white"
               >
                 <i className="fas fa-chevron-left"></i>
               </button>
               <button 
                 onClick={() => handleScroll('right', frontendRowRef)}
-                className="bg-netflix-dark-gray hover:bg-gray-700 rounded-full w-8 h-8 flex items-center justify-center text-white"
+                className="bg-gray-800 hover:bg-gray-700 rounded-full w-8 h-8 flex items-center justify-center text-white"
               >
                 <i className="fas fa-chevron-right"></i>
               </button>
@@ -62,18 +62,18 @@ const SkillsSection = () => {
         {/* Backend Skills Row */}
         <div className="mb-12">
           <div className="flex items-center justify-between mb-4">
-            <h3 className="text-xl text-netflix-light-gray">Backend Development</h3>
+            <h3 className="text-xl text-gray-200">Backend Development</h3>
             
             <div className="flex gap-2">
               <button 
                 onClick={() => handleScroll('left', backendRowRef)}
-                className="bg-netflix-dark-gray hover:bg-gray-700 rounded-full w-8 h-8 flex items-center justify-center text-white"
+                className="bg-gray-800 hover:bg-gray-700 rounded-full w-8 h-8 flex items-center justify-center text-white"
               >
                 <i className="fas fa-chevron-left"></i>
               </button>
               <button 
                 onClick={() => handleScroll('right', backendRowRef)}
-                className="bg-netflix-dark-gray hover:bg-gray-700 rounded-full w-8 h-8 flex items-center justify-center text-white"
+                className="bg-gray-800 hover:bg-gray-700 rounded-full w-8 h-8 flex items-center justify-center text-white"
               >
                 <i className="fas fa-chevron-right"></i>
               </button>
@@ -93,18 +93,18 @@ const SkillsSection = () => {
         {/* Tools & Technologies Row */}
         <div>
           <div className="flex items-center justify-between mb-4">
-            <h3 className="text-xl text-netflix-light-gray">Tools & Technologies</h3>
+            <h3 className="text-xl text-gray-200">Tools & Technologies</h3>
             
             <div className="flex gap-2">
               <button 
                 onClick={() => handleScroll('left', toolsRowRef)}
-                className="bg-netflix-dark-gray hover:bg-gray-700 rounded-full w-8 h-8 flex items-center justify-center text-white"
+                className="bg-gray-800 hover:bg-gray-700 rounded-full w-8 h-8 flex items-center justify-center text-white"
               >
                 <i className="fas fa-chevron-left"></i>
               </button>
               <button 
                 onClick={() => handleScroll('right', toolsRowRef)}
-                className="bg-netflix-dark-gray hover:bg-gray-700 rounded-full w-8 h-8 flex items-center justify-center text-white"
+                className="bg-gray-800 hover:bg-gray-700 rounded-full w-8 h-8 flex items-center justify-center text-white"
               >
                 <i className="fas fa-chevron-right"></i>
               </button>
