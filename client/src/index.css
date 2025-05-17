@@ -1,8 +1,8 @@
+@import './lib/fonts.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import './lib/fonts.css';
 
 :root {
   --background: 0 0% 8%;

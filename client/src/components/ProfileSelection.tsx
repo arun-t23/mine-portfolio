@@ -24,7 +24,7 @@ const ProfileSelection = ({ onProfileSelect }: ProfileSelectionProps) => {
         transition={{ duration: 1 }}
       >
         <motion.h1 
-          className="text-2xl md:text-4xl mb-10 text-netflix-light-gray"
+          className="text-2xl md:text-4xl mb-10 text-gray-200"
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
@@ -52,7 +52,7 @@ const ProfileSelection = ({ onProfileSelect }: ProfileSelectionProps) => {
                 className="w-full h-full object-cover" 
               />
             </div>
-            <p className="mt-4 text-netflix-light-gray">Visitor</p>
+            <p className="mt-4 text-gray-200">Visitor</p>
           </div>
           
           {/* Recruiter Profile */}
@@ -69,7 +69,7 @@ const ProfileSelection = ({ onProfileSelect }: ProfileSelectionProps) => {
                 className="w-full h-full object-cover" 
               />
             </div>
-            <p className="mt-4 text-netflix-light-gray">Recruiter</p>
+            <p className="mt-4 text-gray-200">Recruiter</p>
           </div>
         </motion.div>
       </motion.div>

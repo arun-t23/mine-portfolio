@@ -53,7 +53,7 @@ const Home = () => {
       </AnimatePresence>
 
       {introState.profileSelected && (
-        <div className="min-h-screen bg-netflix-black">
+        <div className="min-h-screen bg-black">
           <Navbar 
             activeProfile={introState.profileSelected} 
             onSwitchProfile={handleSwitchProfile} 
