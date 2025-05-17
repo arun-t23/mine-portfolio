@@ -76,7 +76,7 @@ const AboutSection = () => {
             </motion.div>
             
             <motion.p 
-              className="text-netflix-light-gray text-lg mb-6"
+              className="text-gray-300 text-lg mb-6"
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.6 }}
@@ -92,7 +92,7 @@ const AboutSection = () => {
             >
               <div>
                 <h3 className="text-white font-bold mb-2">Experience</h3>
-                <ul className="text-netflix-light-gray space-y-2">
+                <ul className="text-gray-300 space-y-2">
                   {EXPERIENCE.map((item, index) => (
                     <li key={index}>• {item}</li>
                   ))}
@@ -101,7 +101,7 @@ const AboutSection = () => {
               
               <div>
                 <h3 className="text-white font-bold mb-2">Education</h3>
-                <ul className="text-netflix-light-gray space-y-2">
+                <ul className="text-gray-300 space-y-2">
                   {EDUCATION.map((item, index) => (
                     <li key={index}>• {item}</li>
                   ))}
@@ -116,13 +116,13 @@ const AboutSection = () => {
             >
               <h3 className="text-white font-bold mb-2">More Details</h3>
               <div className="flex flex-wrap gap-3">
-                <button className="bg-netflix-dark-gray hover:bg-gray-700 text-netflix-light-gray px-4 py-2 rounded-md text-sm">
+                <button className="bg-gray-800 hover:bg-gray-700 text-gray-300 px-4 py-2 rounded-md text-sm">
                   Download Resume
                 </button>
-                <button className="bg-netflix-dark-gray hover:bg-gray-700 text-netflix-light-gray px-4 py-2 rounded-md text-sm">
+                <button className="bg-gray-800 hover:bg-gray-700 text-gray-300 px-4 py-2 rounded-md text-sm">
                   Certificates
                 </button>
-                <button className="bg-netflix-dark-gray hover:bg-gray-700 text-netflix-light-gray px-4 py-2 rounded-md text-sm">
+                <button className="bg-gray-800 hover:bg-gray-700 text-gray-300 px-4 py-2 rounded-md text-sm">
                   Publications
                 </button>
               </div>

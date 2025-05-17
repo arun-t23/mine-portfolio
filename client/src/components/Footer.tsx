@@ -2,12 +2,12 @@ import Logo from './Logo';
 
 const Footer = () => {
   return (
-    <footer className="py-12 bg-netflix-black border-t border-gray-800">
+    <footer className="py-12 bg-black border-t border-gray-800">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <Logo size="medium" className="mb-6 md:mb-0" />
           
-          <div className="text-netflix-light-gray text-sm">
+          <div className="text-gray-300 text-sm">
             <ul className="flex flex-wrap justify-center gap-6">
               <li><a href="#home" className="hover:text-white">Home</a></li>
               <li><a href="#projects" className="hover:text-white">Projects</a></li>
