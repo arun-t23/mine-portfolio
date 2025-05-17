@@ -58,24 +58,24 @@ const ContactSection = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <p className="text-netflix-light-gray text-lg mb-6">
+            <p className="text-gray-200 text-lg mb-6">
               Interested in working together or have a question? Feel free to reach out to me using the contact form or through my social media profiles.
             </p>
             
             <div className="space-y-4 mb-8">
               <div className="flex items-center gap-3">
-                <i className="fas fa-envelope text-netflix-red text-xl w-8"></i>
-                <span className="text-netflix-light-gray">{CONTACT_INFO.email}</span>
+                <i className="fas fa-envelope text-red-600 text-xl w-8"></i>
+                <span className="text-gray-200">{CONTACT_INFO.email}</span>
               </div>
               
               <div className="flex items-center gap-3">
-                <i className="fas fa-phone text-netflix-red text-xl w-8"></i>
-                <span className="text-netflix-light-gray">{CONTACT_INFO.phone}</span>
+                <i className="fas fa-phone text-red-600 text-xl w-8"></i>
+                <span className="text-gray-200">{CONTACT_INFO.phone}</span>
               </div>
               
               <div className="flex items-center gap-3">
-                <i className="fas fa-map-marker-alt text-netflix-red text-xl w-8"></i>
-                <span className="text-netflix-light-gray">{CONTACT_INFO.location}</span>
+                <i className="fas fa-map-marker-alt text-red-600 text-xl w-8"></i>
+                <span className="text-gray-200">{CONTACT_INFO.location}</span>
               </div>
             </div>
             
@@ -97,11 +97,11 @@ const ContactSection = () => {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="bg-netflix-dark-gray p-6 rounded-md"
+            className="bg-gray-800 p-6 rounded-md"
           >
             <form onSubmit={handleSubmit(onSubmit)}>
               <div className="mb-4">
-                <label htmlFor="name" className="block text-netflix-light-gray mb-2">Name</label>
+                <label htmlFor="name" className="block text-gray-200 mb-2">Name</label>
                 <input 
                   type="text" 
                   id="name" 
@@ -114,7 +114,7 @@ const ContactSection = () => {
               </div>
               
               <div className="mb-4">
-                <label htmlFor="email" className="block text-netflix-light-gray mb-2">Email</label>
+                <label htmlFor="email" className="block text-gray-200 mb-2">Email</label>
                 <input 
                   type="email" 
                   id="email" 
@@ -133,7 +133,7 @@ const ContactSection = () => {
               </div>
               
               <div className="mb-4">
-                <label htmlFor="subject" className="block text-netflix-light-gray mb-2">Subject</label>
+                <label htmlFor="subject" className="block text-gray-200 mb-2">Subject</label>
                 <input 
                   type="text" 
                   id="subject" 
@@ -146,7 +146,7 @@ const ContactSection = () => {
               </div>
               
               <div className="mb-6">
-                <label htmlFor="message" className="block text-netflix-light-gray mb-2">Message</label>
+                <label htmlFor="message" className="block text-gray-200 mb-2">Message</label>
                 <textarea 
                   id="message" 
                   rows={5} 
@@ -161,7 +161,7 @@ const ContactSection = () => {
               <button 
                 type="submit" 
                 disabled={submitting}
-                className="bg-netflix-red hover:bg-red-700 text-white px-6 py-3 rounded-md font-semibold w-full disabled:opacity-70 disabled:cursor-not-allowed"
+                className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-md font-semibold w-full disabled:opacity-70 disabled:cursor-not-allowed"
               >
                 {submitting ? 'Sending...' : 'Send Message'}
               </button>
