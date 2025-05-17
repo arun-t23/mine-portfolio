@@ -14,7 +14,7 @@ const SkillCard = ({ skill, delay = 0 }: SkillCardProps) => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay }}
     >
-      <div className="mb-3 w-24 h-24 mx-auto bg-netflix-dark-gray rounded-full flex items-center justify-center">
+      <div className="mb-3 w-24 h-24 mx-auto bg-gray-800 rounded-full flex items-center justify-center">
         <i className={`${skill.iconType || 'fab'} ${skill.icon} text-5xl ${skill.iconColor}`}></i>
       </div>
       
@@ -22,7 +22,7 @@ const SkillCard = ({ skill, delay = 0 }: SkillCardProps) => {
       
       <div className="mt-2 bg-gray-700 h-1 w-full rounded-full">
         <motion.div 
-          className="bg-netflix-red h-1 rounded-full"
+          className="bg-red-600 h-1 rounded-full"
           initial={{ width: 0 }}
           animate={{ width: `${skill.proficiency}%` }}
           transition={{ duration: 1, delay: delay + 0.3 }}
