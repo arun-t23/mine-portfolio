@@ -1,8 +1,10 @@
 import { Howl } from 'howler';
 
-// Netflix sound copied from their site
+// Local Netflix tudum sound
+import tudum from '@/assets/tudum.mp3';
+
 export const netflixSound = new Howl({
-  src: ['https://assets.nflxext.com/ffe/siteui/acquisition/home/nflxlogo_sound.mp3'],
+  src: [tudum],
   volume: 0.7,
   preload: true,
 });

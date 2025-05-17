@@ -1,3 +1,4 @@
+import { useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { 
   DEVELOPER_TITLE, 
@@ -5,8 +6,20 @@ import {
   DEVELOPER_BIO,
   HERO_IMAGE 
 } from '@/lib/constants';
+import netflixIntroVideo from '@/assets/netflix-intro.mp4';
 
 const HeroSection = () => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    // Start playing the video when the component mounts
+    if (videoRef.current) {
+      videoRef.current.play().catch(error => {
+        console.error("Video playback failed:", error);
+      });
+    }
+  }, []);
+
   return (
     <section id="home" className="relative h-screen pt-16">
       {/* Background Image with Gradient Overlay */}
@@ -54,6 +67,23 @@ const HeroSection = () => {
           >
             {DEVELOPER_BIO}
           </motion.p>
+          
+          {/* Netflix intro video below the fullstack developer section */}
+          <motion.div
+            className="mb-8 relative w-full max-w-xl rounded-md overflow-hidden"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.7 }}
+          >
+            <video 
+              ref={videoRef}
+              className="w-full"
+              muted
+              loop
+              playsInline
+              src={netflixIntroVideo}
+            />
+          </motion.div>
           
           <motion.div 
             className="flex flex-wrap gap-3"
