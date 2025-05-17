@@ -16,8 +16,8 @@ const HeroSection = () => {
           alt="Developer Workspace Hero Image" 
           className="w-full h-full object-cover opacity-50" 
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-netflix-black to-transparent"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-netflix-black via-transparent to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
       </div>
       
       {/* Hero Content */}
@@ -38,7 +38,7 @@ const HeroSection = () => {
           </motion.h1>
           
           <motion.h2 
-            className="text-xl md:text-3xl text-netflix-light-gray mb-6"
+            className="text-xl md:text-3xl text-gray-300 mb-6"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -47,7 +47,7 @@ const HeroSection = () => {
           </motion.h2>
           
           <motion.p 
-            className="text-netflix-light-gray mb-8 text-lg max-w-xl"
+            className="text-gray-300 mb-8 text-lg max-w-xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
@@ -63,7 +63,7 @@ const HeroSection = () => {
           >
             <a 
               href="#projects" 
-              className="bg-netflix-red hover:bg-red-700 text-white px-6 py-3 rounded-md flex items-center font-semibold"
+              className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-md flex items-center font-semibold"
             >
               <i className="fas fa-play mr-2"></i> View Projects
             </a>

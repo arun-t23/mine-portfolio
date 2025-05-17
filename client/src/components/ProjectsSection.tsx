@@ -21,18 +21,18 @@ const ProjectsSection = () => {
         {/* Featured Projects Row */}
         <div className="mb-12">
           <div className="flex items-center justify-between mb-4">
-            <h2 className="text-2xl font-netflix font-bold text-netflix-light-gray">Featured Projects</h2>
+            <h2 className="text-2xl font-bold text-gray-200">Featured Projects</h2>
             
             <div className="flex gap-2">
               <button 
                 onClick={() => handleScroll('left', featuredRowRef)}
-                className="bg-netflix-dark-gray hover:bg-gray-700 rounded-full w-8 h-8 flex items-center justify-center text-white"
+                className="bg-gray-800 hover:bg-gray-700 rounded-full w-8 h-8 flex items-center justify-center text-white"
               >
                 <i className="fas fa-chevron-left"></i>
               </button>
               <button 
                 onClick={() => handleScroll('right', featuredRowRef)}
-                className="bg-netflix-dark-gray hover:bg-gray-700 rounded-full w-8 h-8 flex items-center justify-center text-white"
+                className="bg-gray-800 hover:bg-gray-700 rounded-full w-8 h-8 flex items-center justify-center text-white"
               >
                 <i className="fas fa-chevron-right"></i>
               </button>
