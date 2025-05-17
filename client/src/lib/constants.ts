@@ -189,5 +189,9 @@ export const SOCIAL_LINKS = [
 export const HERO_IMAGE = "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1920&h=1080";
 export const ABOUT_BG_IMAGE = "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1920&h=1080";
 export const PROFILE_IMAGE = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&h=900";
-export const VISITOR_PROFILE_IMAGE = "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&h=300";
-export const RECRUITER_PROFILE_IMAGE = "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=300&h=300";
+// Using local profile images
+import visitorProfile from '@/assets/profile-visitor.png';
+import recruiterProfile from '@/assets/profile-recruiter.png';
+
+export const VISITOR_PROFILE_IMAGE = visitorProfile;
+export const RECRUITER_PROFILE_IMAGE = recruiterProfile;
