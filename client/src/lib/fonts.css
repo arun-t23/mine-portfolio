@@ -1,0 +1,21 @@
+/* Netflix Logo Font */
+.netflix-logo {
+  font-family: 'Bebas Neue', sans-serif;
+  color: hsl(var(--netflix-red));
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.5px;
+}
+
+/* Body Font */
+.netflix-body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Font utility classes */
+.font-netflix {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.font-body {
+  font-family: 'Open Sans', sans-serif;
+}
