@@ -17,7 +17,7 @@ const Footer = () => {
               <li><a href="#" className="hover:text-white">Privacy</a></li>
             </ul>
             
-            <p className="mt-6 text-center">© {new Date().getFullYear()} John Doe. All rights reserved. Inspired by Netflix.</p>
+            <p className="mt-6 text-center">© {new Date().getFullYear()} All rights reserved.</p>
           </div>
         </div>
       </div>

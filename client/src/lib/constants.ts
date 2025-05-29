@@ -1,10 +1,10 @@
 import { Project, Skill } from './types';
 
 // Developer info
-export const DEVELOPER_NAME = "JOHN DOE";
-export const DEVELOPER_TITLE = "Full Stack Developer";
-export const DEVELOPER_SUBTITLE = "Turning Ideas into Digital Reality";
-export const DEVELOPER_BIO = "Passionate about creating seamless user experiences and robust backends. Specializing in React, Node.js, and cloud solutions.";
+export const DEVELOPER_NAME = "ARUN KUMAR";
+export const DEVELOPER_TITLE = "DevOps Engineer";
+export const DEVELOPER_SUBTITLE = "Automating the Future";
+export const DEVELOPER_BIO = "Passionate about automating and streamlining processes to improve efficiency and productivity.";
 
 // Projects data
 export const FEATURED_PROJECTS: Project[] = [
@@ -160,22 +160,19 @@ export const TOOLS_SKILLS: Skill[] = [
 
 // Experience & Education
 export const EXPERIENCE = [
-  "Lead Developer at Tech Solutions (2020-Present)",
-  "Frontend Specialist at WebCraft (2018-2020)",
-  "Junior Developer at Digital Innovations (2016-2018)"
+  "DevOps Engineer (2022-Present)",
+  "DevOps Engineer (2020-2022)",
 ];
 
 export const EDUCATION = [
-  "MSc in Computer Science, Tech University",
-  "BSc in Software Engineering, State University",
-  "Various certifications in web technologies"
+  "Bachelors in Electronics and Communication Engineering",
 ];
 
 // Contact information
 export const CONTACT_INFO = {
-  email: "johndoe@example.com",
-  phone: "+1 (555) 123-4567",
-  location: "San Francisco, CA"
+  email: "arun.kumar021@outlook.com",
+  phone: "+1 (519) 697-1397",
+  location: "Waterloo, ON"
 };
 
 export const SOCIAL_LINKS = [
@@ -185,13 +182,14 @@ export const SOCIAL_LINKS = [
   { name: "Medium", icon: "fab fa-medium", url: "#" }
 ];
 
-// Heroes images
+// Background images
 export const HERO_IMAGE = "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1920&h=1080";
 export const ABOUT_BG_IMAGE = "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1920&h=1080";
-export const PROFILE_IMAGE = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&h=900";
-// Using local profile images
+
+// Import profile images
 import visitorProfile from '@/assets/profile-visitor.png';
 import recruiterProfile from '@/assets/profile-recruiter.png';
 
+// Profile image exports
 export const VISITOR_PROFILE_IMAGE = visitorProfile;
 export const RECRUITER_PROFILE_IMAGE = recruiterProfile;

@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import { 
   ABOUT_BG_IMAGE, 
-  PROFILE_IMAGE, 
   DEVELOPER_NAME,
   EXPERIENCE,
   EDUCATION 
@@ -23,57 +22,22 @@ const AboutSection = () => {
       
       <div className="container relative z-10 mx-auto px-4">
         <motion.div 
-          className="flex flex-col md:flex-row items-center md:items-start gap-8"
+          className="w-full"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <div className="w-full md:w-1/3">
-            <motion.div 
-              className="aspect-[2/3] overflow-hidden rounded-md"
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
-              <img 
-                src={PROFILE_IMAGE} 
-                alt={`${DEVELOPER_NAME} Professional Portrait`} 
-                className="w-full h-full object-cover" 
-              />
-            </motion.div>
-          </div>
-          
-          <div className="w-full md:w-2/3">
-            <motion.div 
-              className="flex items-center gap-3 mb-4"
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-            >
-              <span className="text-red-600 text-sm font-bold">NETFLIX ORIGINAL</span>
-              <span className="h-5 w-px bg-gray-500"></span>
-              <span className="text-gray-300 text-sm font-bold">BIOGRAPHY</span>
-            </motion.div>
-            
+          <div className="w-full">
             <motion.h2 
               className="text-4xl md:text-5xl font-bold text-white mb-6"
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
             >
               About {DEVELOPER_NAME}
             </motion.h2>
             
-            <motion.div 
-              className="mb-6 flex gap-3"
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.5 }}
-            >
-              <span className="text-green-500 font-bold">98% Match</span>
-              <span className="border border-gray-600 px-1 text-sm">2023</span>
-              <span className="border border-gray-600 px-1 text-sm">HD</span>
-            </motion.div>
+            <div className="mb-6"></div>
             
             <motion.p 
               className="text-gray-300 text-lg mb-6"
@@ -81,7 +45,7 @@ const AboutSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.6 }}
             >
-              A passionate full stack developer with over 6 years of experience building modern web applications. Specializing in creating seamless user experiences with React on the frontend and robust APIs with Node.js on the backend.
+              I'm a passionate DevOps Engineer with expertise in CI/CD pipelines, containerization, and cloud infrastructure. I love automating workflows and optimizing system performance.
             </motion.p>
             
             <motion.div 
