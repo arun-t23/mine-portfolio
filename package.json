@@ -1,13 +1,16 @@
 {
-  "name": "rest-express",
+  "name": "netflix-style-portfolio",
   "version": "1.0.0",
   "type": "module",
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "license": "MIT",
   "scripts": {
     "dev": "set NODE_ENV=development && tsx server/index.ts",
     "build": "vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",
     "start": "node dist/index.js",
-    "vercel-build": "node vercel-build.js",
+    "vercel-build": "npm install && npm run build",
     "check": "tsc",
     "db:push": "drizzle-kit push"
   },
