@@ -1,5 +1,6 @@
-const { execSync } = require('child_process');
-const path = require('path');
+import { execSync } from 'child_process';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
 console.log('Starting Vercel build process...');
 
